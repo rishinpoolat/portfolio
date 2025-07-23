@@ -1,5 +1,7 @@
 # Shangri-La Petition Platform (SLPP) - Democratic Engagement System
 
+[GitHub Repository](https://github.com/rishinpoolat/petition-signer)
+
 ## Overview
 
 The Shangri-La Petition Platform (SLPP) is a comprehensive full-stack democratic engagement platform designed to empower citizens of Shangri-La to create, sign, and manage petitions on matters within the government's responsibility. This sophisticated web application combines modern React.js frontend technology with a robust Node.js backend, integrated with Supabase for scalable data management and featuring advanced BioID verification through QR code scanning for enhanced security and authenticity.

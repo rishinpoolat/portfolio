@@ -1,5 +1,7 @@
 # Video Summarizer
 
+[GitHub Repository](https://github.com/rishinpoolat/video-summarizer)
+
 **A comprehensive YouTube video summarization system with multi-LLM support, advanced web scraping, and Telegram bot integration**
 
 ## Overview

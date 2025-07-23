@@ -1,5 +1,6 @@
 # Penply - Social Collaboration Platform
 
+
 ## Overview
 
 Penply is a sophisticated full-stack social collaboration platform designed to revolutionize team productivity by consolidating multiple workspace tools into a single, unified solution. This modern web application enables teams to create collaborative "rooms" where members can engage in real-time chat, share notes, schedule events, and manage files - all within an intuitive, seamless interface.

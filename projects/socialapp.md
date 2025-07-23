@@ -1,5 +1,7 @@
 # SocialApp - Full-Stack Social Media Platform
 
+[GitHub Repository](https://github.com/rishinpoolat/socialapp)
+
 ## Overview
 
 SocialApp is a comprehensive full-stack social media platform designed to deliver an engaging and secure social networking experience. Built with modern web technologies, this application provides users with essential social media features including user authentication with OTP verification, real-time posting capabilities, social interactions through likes and comments, and a robust follow system for building social connections.

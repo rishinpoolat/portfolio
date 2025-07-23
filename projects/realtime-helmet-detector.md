@@ -1,5 +1,7 @@
 # Real-Time Helmet Detection System
 
+[GitHub Repository](https://github.com/rishinpoolat/realtime-helmet-detector)
+
 ## Overview
 
 The Real-Time Helmet Detection System is a sophisticated computer vision and safety-focused project designed to enhance motorcycle rider safety through automated helmet detection and intelligent alerts. This system leverages deep learning algorithms to analyze live camera feeds and provides immediate audio notifications when riders are detected without helmets, promoting safety compliance and accident prevention.

@@ -534,7 +534,7 @@ bun run build
 - **License**: MIT
 - **Author**: Mohammed Rishin Poolat
 - **Node Requirement**: >=18.0.0
-- **Repository**: Available on GitHub
+- **Repository**: [GitHub Repository](https://github.com/rishinpoolat/renamer)
 - **NPM Package**: Published on npm registry
 
 ## 🎯 Use Cases & Benefits

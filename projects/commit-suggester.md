@@ -295,7 +295,7 @@ MIT License - See LICENSE file for details.
 
 ## 🔗 Links
 
-- **Repository**: Available on GitHub
+- **Repository**: [GitHub Repository](https://github.com/rishinpoolat/commit-suggester)
 - **NPM Package**: Published on npm registry
 - **Documentation**: Comprehensive README included
 - **Issues**: GitHub issues for bug reports and feature requests

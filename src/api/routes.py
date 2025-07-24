@@ -86,10 +86,10 @@ async def chat_endpoint(
                 {
                     'filename': source['filename'],
                     'category': source['category'],
-                    'relevance_score': source['relevance_score'],
+                    'relevance_score': max(0.0, source['relevance_score']),  # Ensure non-negative
                     'file_path': source['file_path'],
                     'chunk_id': source['chunk_id'],
-                    'technologies': source['technologies']
+                    'technologies': source['technologies'].split(', ') if isinstance(source['technologies'], str) else source['technologies']
                 }
                 for source in result['sources']
             ],
@@ -362,29 +362,4 @@ async def all_sessions_stats_endpoint(
             detail="An error occurred while retrieving session statistics"
         )
 
-# Error handlers
-@router.exception_handler(HTTPException)
-async def http_exception_handler(request, exc: HTTPException):
-    """Handle HTTP exceptions with proper error response format."""
-    return JSONResponse(
-        status_code=exc.status_code,
-        content=ErrorResponse(
-            error=exc.__class__.__name__,
-            message=exc.detail,
-            timestamp=datetime.utcnow().isoformat() + "Z"
-        ).dict()
-    )
-
-@router.exception_handler(Exception)
-async def general_exception_handler(request, exc: Exception):
-    """Handle general exceptions with proper error response format."""
-    logger.error(f"Unhandled exception: {exc}")
-    return JSONResponse(
-        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-        content=ErrorResponse(
-            error=exc.__class__.__name__,
-            message="An unexpected error occurred",
-            details={"exception_type": str(type(exc).__name__)},
-            timestamp=datetime.utcnow().isoformat() + "Z"
-        ).dict()
-    )
+# Note: Exception handlers are in main.py since APIRouter doesn't support them

@@ -186,6 +186,13 @@ class PortfolioVectorDB:
                     'chunk_text': chunk[:200] + "..." if len(chunk) > 200 else chunk
                 })
                 
+                # Convert list values to strings for ChromaDB compatibility
+                for key, value in chunk_metadata.items():
+                    if isinstance(value, list):
+                        chunk_metadata[key] = ', '.join(str(v) for v in value)
+                    elif not isinstance(value, (str, int, float, bool)):
+                        chunk_metadata[key] = str(value)
+                
                 # Add to category-specific collection
                 if category in self.collections:
                     self.collections[category].add(

@@ -1,0 +1,30 @@
+[project]
+name = "portfolio-rag-chatbot"
+version = "1.0.0"
+description = "Intelligent conversational AI system for Mohammed Rishin's professional portfolio"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn[standard]==0.24.0",
+    "pydantic==2.5.0",
+    "chromadb==0.4.18",
+    "langchain==0.1.0",
+    "langchain-community==0.0.10",
+    "groq==0.4.1",
+    "sentence-transformers>=2.7.0",
+    "python-frontmatter==1.0.0",
+    "python-multipart==0.0.6",
+    "python-dotenv==1.0.0",
+    "pytest==7.4.3",
+    "pytest-asyncio==0.21.1",
+    "httpx==0.25.2",
+    "typing-extensions==4.8.0",
+    "huggingface-hub>=0.20.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.4.3",
+    "pytest-asyncio>=0.21.1", 
+    "httpx>=0.25.2",
+]

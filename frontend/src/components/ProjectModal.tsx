@@ -50,22 +50,53 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           <div className="modal-section">
             <h3>Tech Stack</h3>
             <div className="tech-tags-modal">
-              {(project.techStack || (project as any).techStack || []).map((tech: any, index: number) => (
-                <span key={index} className="tech-tag-modal">{tech}</span>
-              ))}
+              {(project.technologies || project.techStack || []).map((tech: any, index: number) => {
+                if (typeof tech === 'string') {
+                  return (
+                    <span key={index} className="tech-tag-modal">{tech}</span>
+                  );
+                } else if (tech && typeof tech === 'object' && tech.technologies) {
+                  // Handle techStack objects with category and technologies
+                  return tech.technologies.map((subTech: string, subIndex: number) => (
+                    <span key={`${index}-${subIndex}`} className="tech-tag-modal">{subTech}</span>
+                  ));
+                }
+                return null;
+              })}
             </div>
           </div>
 
           {project.features && project.features.length > 0 && (
             <div className="modal-section">
               <h3>Key Features</h3>
-              <ul className="feature-list">
-                {project.features.map((feature, index) => (
-                  <li key={index}>
-                    {typeof feature === 'string' ? feature : feature.title}
-                  </li>
-                ))}
-              </ul>
+              <div className="features-container">
+                {project.features.map((feature, index) => {
+                  if (typeof feature === 'string') {
+                    return (
+                      <div key={index} className="feature-item">
+                        <h4>{feature}</h4>
+                      </div>
+                    );
+                  } else if (feature && typeof feature === 'object') {
+                    return (
+                      <div key={index} className="feature-item">
+                        <h4>{feature.title}</h4>
+                        {feature.description && (
+                          <p className="feature-description">{feature.description}</p>
+                        )}
+                        {feature.details && feature.details.length > 0 && (
+                          <ul className="feature-details">
+                            {feature.details.map((detail: string, detailIndex: number) => (
+                              <li key={detailIndex}>{detail}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    );
+                  }
+                  return null;
+                })}
+              </div>
             </div>
           )}
 
@@ -83,13 +114,25 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           {project.achievements && project.achievements.length > 0 && (
             <div className="modal-section">
               <h3>Achievements</h3>
-              <ul className="achievement-list">
-                {project.achievements.map((achievement, index) => (
-                  <li key={index}>
-                    {typeof achievement === 'string' ? achievement : `${achievement.metric}: ${achievement.description}`}
-                  </li>
-                ))}
-              </ul>
+              <div className="achievements-grid">
+                {project.achievements.map((achievement, index) => {
+                  if (typeof achievement === 'string') {
+                    return (
+                      <div key={index} className="achievement-item">
+                        <span>{achievement}</span>
+                      </div>
+                    );
+                  } else if (achievement && typeof achievement === 'object') {
+                    return (
+                      <div key={index} className="achievement-item">
+                        <span className="metric">{achievement.metric}</span>
+                        <span className="description">{achievement.description}</span>
+                      </div>
+                    );
+                  }
+                  return null;
+                })}
+              </div>
             </div>
           )}
         </div>

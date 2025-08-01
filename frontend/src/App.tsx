@@ -3,12 +3,13 @@ import Header from './components/Header';
 import Timeline from './components/Timeline';
 import ExperienceSection from './components/ExperienceSection';
 import EducationSection from './components/EducationSection';
+import EducationModal from './components/EducationModal';
 import CertificationSection from './components/CertificationSection';
 import HackathonSection from './components/HackathonSection';
 import ProjectCard from './components/ProjectCard';
 import ProjectModal from './components/ProjectModal';
 import Footer from './components/Footer';
-import { Project } from './types/portfolio';
+import { Project, Education } from './types/portfolio';
 import {
   projects,
   timelineData,
@@ -21,13 +22,22 @@ import './App.css';
 
 function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [selectedEducation, setSelectedEducation] = useState<Education | null>(null);
 
   const handleProjectClick = (project: Project) => {
     setSelectedProject(project);
   };
 
-  const handleCloseModal = () => {
+  const handleEducationClick = (education: Education) => {
+    setSelectedEducation(education);
+  };
+
+  const handleCloseProjectModal = () => {
     setSelectedProject(null);
+  };
+
+  const handleCloseEducationModal = () => {
+    setSelectedEducation(null);
   };
 
   return (
@@ -38,7 +48,10 @@ function App() {
       
       <ExperienceSection experiences={experienceData} />
       
-      <EducationSection education={educationData} />
+      <EducationSection 
+        education={educationData} 
+        onEducationClick={handleEducationClick}
+      />
       
       <CertificationSection certifications={certificationData} />
       
@@ -60,7 +73,14 @@ function App() {
       {selectedProject && (
         <ProjectModal
           project={selectedProject}
-          onClose={handleCloseModal}
+          onClose={handleCloseProjectModal}
+        />
+      )}
+
+      {selectedEducation && (
+        <EducationModal
+          education={selectedEducation}
+          onClose={handleCloseEducationModal}
         />
       )}
       

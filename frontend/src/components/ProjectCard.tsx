@@ -26,11 +26,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
       <div className="tech-stack">
         <strong>Tech Stack:</strong>
         <div className="tech-tags">
-          {(project.technologies || (project as any).techStack || []).map((tech: any, index: number) => (
-            <span key={index} className="tech-tag">
-              {typeof tech === 'string' ? tech : tech}
-            </span>
-          ))}
+          {(project.technologies || (project as any).techStack || []).map((tech: any, index: number) => {
+            if (typeof tech === 'string') {
+              return (
+                <span key={index} className="tech-tag">
+                  {tech}
+                </span>
+              );
+            } else if (tech && typeof tech === 'object') {
+              // Handle techStack objects with category and technologies
+              if (tech.technologies && Array.isArray(tech.technologies)) {
+                return tech.technologies.map((subTech: string, subIndex: number) => (
+                  <span key={`${index}-${subIndex}`} className="tech-tag">
+                    {subTech}
+                  </span>
+                ));
+              }
+            }
+            return null;
+          })}
         </div>
       </div>
       <div className="project-links">

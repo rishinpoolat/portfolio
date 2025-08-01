@@ -84,6 +84,18 @@ export interface Experience {
 }
 
 // Education interfaces
+export interface EducationModule {
+  name: string;
+  credits: number;
+  grade: string;
+  description: string;
+}
+
+export interface EducationSkillCategory {
+  category: string;
+  skills: string[];
+}
+
 export interface CourseModule {
   code: string;
   name: string;
@@ -108,13 +120,32 @@ export interface Education {
   startDate?: string;
   endDate?: string;
   duration?: string; // backward compatibility
+  grade?: string;
   cgpa?: number;
   classification?: string;
+  description?: string;
   semesters?: Semester[];
   coreSkills?: string[];
   projects?: string[];
   achievements?: string[];
   registrationNumber?: string;
+  details?: {
+    overview: string;
+    college?: string;
+    registerNumber?: string;
+    coreModules?: EducationModule[];
+    technologies?: string[];
+    achievements?: string[];
+    academicPerformance?: {
+      overallCGPA: string;
+      classification: string;
+      peakSGPA: string;
+      consistentPerformance: string;
+    };
+    coreSkills?: EducationSkillCategory[];
+    laboratoryExperience?: string[];
+    projectWork?: string[];
+  };
 }
 
 // Certification interfaces

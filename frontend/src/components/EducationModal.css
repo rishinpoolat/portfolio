@@ -1,0 +1,382 @@
+.education-modal {
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.education-main-info {
+  margin-bottom: 2rem;
+}
+
+.institution-info h3 {
+  color: #f7564a;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.institution-info h3 i {
+  font-size: 1.2rem;
+}
+
+.college-name {
+  color: #ccc;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.education-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.education-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.education-meta i {
+  color: #f7564a;
+}
+
+.grade {
+  font-weight: 600;
+  color: #f7564a !important;
+}
+
+.education-description {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(247, 86, 74, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #f7564a;
+}
+
+.education-overview {
+  margin-bottom: 2rem;
+}
+
+.education-overview h4 {
+  color: #f7564a;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.academic-performance {
+  margin-bottom: 2rem;
+}
+
+.academic-performance h4 {
+  color: #f7564a;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.performance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  border: 1px solid rgba(247, 86, 74, 0.2);
+}
+
+.performance-item .label {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.performance-item .value {
+  color: #f7564a;
+  font-weight: 600;
+}
+
+.core-modules {
+  margin-bottom: 2rem;
+}
+
+.core-modules h4 {
+  color: #f7564a;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.module-card {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(247, 86, 74, 0.2);
+  transition: all 0.3s ease;
+}
+
+.module-card:hover {
+  border-color: rgba(247, 86, 74, 0.4);
+  transform: translateY(-2px);
+}
+
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.module-header h5 {
+  color: #fff;
+  margin: 0;
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.module-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  margin-left: 1rem;
+}
+
+.module-meta .credits {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.module-meta .grade {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f7564a;
+  padding: 0.2rem 0.5rem;
+  background: rgba(247, 86, 74, 0.1);
+  border-radius: 4px;
+}
+
+.module-description {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.core-skills {
+  margin-bottom: 2rem;
+}
+
+.core-skills h4 {
+  color: #f7564a;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.skills-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.skill-category h5 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  border-bottom: 2px solid rgba(247, 86, 74, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(247, 86, 74, 0.1);
+  color: #f7564a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(247, 86, 74, 0.3);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(247, 86, 74, 0.2);
+  border-color: rgba(247, 86, 74, 0.5);
+}
+
+.technologies {
+  margin-bottom: 2rem;
+}
+
+.technologies h4 {
+  color: #f7564a;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.laboratory-experience,
+.project-work,
+.education-achievements {
+  margin-bottom: 2rem;
+}
+
+.laboratory-experience h4,
+.project-work h4,
+.education-achievements h4 {
+  color: #f7564a;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.lab-list,
+.project-list,
+.achievements-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.lab-item,
+.project-item,
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #f7564a;
+  transition: all 0.3s ease;
+}
+
+.lab-item:hover,
+.project-item:hover,
+.achievement-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(5px);
+}
+
+.lab-item i,
+.project-item i,
+.achievement-item i {
+  color: #f7564a;
+  font-size: 1rem;
+  min-width: 1rem;
+}
+
+.lab-item span,
+.project-item span,
+.achievement-item span {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-modal {
+    margin: 1rem;
+    max-height: 85vh;
+  }
+
+  .education-meta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .performance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .module-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .module-meta {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .skills-categories {
+    gap: 1rem;
+  }
+
+  .skills-list,
+  .tech-tags {
+    gap: 0.4rem;
+  }
+
+  .skill-tag,
+  .tech-tag {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-modal {
+    margin: 0.5rem;
+    max-height: 90vh;
+  }
+
+  .lab-item,
+  .project-item,
+  .achievement-item {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .module-card {
+    padding: 0.8rem;
+  }
+
+  .performance-item {
+    padding: 0.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}

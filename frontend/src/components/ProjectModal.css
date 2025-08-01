@@ -1,0 +1,237 @@
+.modal-header {
+  margin-bottom: 2rem;
+}
+
+.modal-header h2 {
+  margin-bottom: 1rem;
+  font-size: 28px;
+}
+
+.modal-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.modal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f7564a;
+  font-weight: 600;
+  transition: color 0.3s;
+  padding: 0.5rem 1rem;
+  border: 1px solid #f7564a;
+  border-radius: 6px;
+  background-color: rgba(247, 86, 74, 0.1);
+}
+
+.modal-link:hover {
+  color: #fff;
+  background-color: #f7564a;
+}
+
+.modal-body {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-section {
+  margin-bottom: 2rem;
+}
+
+.modal-section h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #f7564a;
+}
+
+.modal-section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tech-tags-modal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag-modal {
+  background-color: rgba(247, 86, 74, 0.1);
+  color: #f7564a;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid rgba(247, 86, 74, 0.3);
+  font-weight: 500;
+}
+
+.feature-list,
+.challenge-list,
+.achievement-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li,
+.challenge-list li,
+.achievement-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(72, 72, 73, 0.3);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.feature-list li:before {
+  content: "✓";
+  color: #f7564a;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.challenge-list li:before {
+  content: "⚡";
+  position: absolute;
+  left: 0;
+}
+
+.achievement-list li:before {
+  content: "🏆";
+  position: absolute;
+  left: 0;
+}
+
+.feature-list li:last-child,
+.challenge-list li:last-child,
+.achievement-list li:last-child {
+  border-bottom: none;
+}
+
+/* New feature container styles */
+.features-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 4px solid #f7564a;
+}
+
+.feature-item h4 {
+  color: #f7564a;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.feature-description {
+  color: #ccc;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.feature-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-details li {
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-bottom: none;
+  position: relative;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+.feature-details li:before {
+  content: "•";
+  color: #f7564a;
+  position: absolute;
+  left: 0;
+}
+
+/* New achievements grid styles */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.achievement-item {
+  background: rgba(247, 86, 74, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid rgba(247, 86, 74, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.achievement-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(247, 86, 74, 0.5);
+}
+
+.achievement-item .metric {
+  display: block;
+  color: #f7564a;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-item .description {
+  display: block;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .modal-header h2 {
+    font-size: 24px;
+  }
+  
+  .modal-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .modal-link {
+    justify-content: center;
+  }
+  
+  .tech-tags-modal {
+    gap: 0.25rem;
+  }
+  
+  .tech-tag-modal {
+    font-size: 12px;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .modal-body {
+    max-height: 50vh;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-item {
+    padding: 0.75rem;
+  }
+  
+  .achievement-item {
+    padding: 0.75rem;
+  }
+}

@@ -1,0 +1,66 @@
+.hackathon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hackathon-card {
+  border: #484849 solid 1px;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hackathon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(247, 86, 74, 0.2);
+}
+
+.hackathon-card h3 {
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+.hackathon-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.hackathon-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hackathon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f7564a;
+  font-weight: 600;
+  transition: color 0.3s;
+  padding: 0.5rem 0;
+}
+
+.hackathon-link:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hackathon-card {
+    padding: 15px;
+  }
+  
+  .hackathon-card h3 {
+    font-size: 20px;
+  }
+  
+  .hackathon-card p {
+    font-size: 16px;
+  }
+  
+  .hackathon-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

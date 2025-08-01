@@ -1,0 +1,91 @@
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.hi {
+  font-size: 28px;
+}
+
+.name {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f7564a;
+}
+
+.designation {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+.about {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  font-size: 2rem;
+}
+
+.social-link:hover {
+  background-color: #484849;
+}
+
+.resume-btn {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  border: 1px solid #484849;
+}
+
+.resume-btn:hover {
+  background-color: #333334;
+}
+
+@media (max-width: 768px) {
+  .links {
+    gap: 0.5rem;
+  }
+
+  .social-link {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .resume-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+  }
+}

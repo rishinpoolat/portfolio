@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 2rem 0;
+  border-top: 1px solid #484849;
+  margin-top: 3rem;
+}
+
+.footer p {
+  color: #c2c2c2;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+}

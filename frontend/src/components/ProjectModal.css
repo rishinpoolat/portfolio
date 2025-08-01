@@ -1,0 +1,143 @@
+.modal-header {
+  margin-bottom: 2rem;
+}
+
+.modal-header h2 {
+  margin-bottom: 1rem;
+  font-size: 28px;
+}
+
+.modal-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.modal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f7564a;
+  font-weight: 600;
+  transition: color 0.3s;
+  padding: 0.5rem 1rem;
+  border: 1px solid #f7564a;
+  border-radius: 6px;
+  background-color: rgba(247, 86, 74, 0.1);
+}
+
+.modal-link:hover {
+  color: #fff;
+  background-color: #f7564a;
+}
+
+.modal-body {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-section {
+  margin-bottom: 2rem;
+}
+
+.modal-section h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #f7564a;
+}
+
+.modal-section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tech-tags-modal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag-modal {
+  background-color: rgba(247, 86, 74, 0.1);
+  color: #f7564a;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid rgba(247, 86, 74, 0.3);
+  font-weight: 500;
+}
+
+.feature-list,
+.challenge-list,
+.achievement-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li,
+.challenge-list li,
+.achievement-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(72, 72, 73, 0.3);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.feature-list li:before {
+  content: "✓";
+  color: #f7564a;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.challenge-list li:before {
+  content: "⚡";
+  position: absolute;
+  left: 0;
+}
+
+.achievement-list li:before {
+  content: "🏆";
+  position: absolute;
+  left: 0;
+}
+
+.feature-list li:last-child,
+.challenge-list li:last-child,
+.achievement-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .modal-header h2 {
+    font-size: 24px;
+  }
+  
+  .modal-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .modal-link {
+    justify-content: center;
+  }
+  
+  .tech-tags-modal {
+    gap: 0.25rem;
+  }
+  
+  .tech-tag-modal {
+    font-size: 12px;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .modal-body {
+    max-height: 50vh;
+  }
+}

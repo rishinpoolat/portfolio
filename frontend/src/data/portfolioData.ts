@@ -17,6 +17,7 @@ export interface TimelineItem {
 }
 
 export const projects: Project[] = [
+  
   {
     id: "commit-suggester",
     title: "Commit Suggester",
@@ -259,6 +260,94 @@ export const projects: Project[] = [
       "Comprehensive feedback system",
       "Responsive web interface for educators",
     ],
+  },{
+    id: "expense-tracker",
+    title: "Expense Tracker with Smart Receipt OCR",
+    shortDescription:
+      "Comprehensive full-stack expense tracking application with intelligent OCR technology for automated receipt processing, advanced analytics, and modern user experience.",
+    fullDescription:
+      "A sophisticated expense tracking system featuring dual OCR processing, custom date range analytics, and clean architecture patterns. Built with .NET Core backend and React TypeScript frontend.",
+    githubUrl: "https://github.com/rishinpoolat/expense-tracker",
+    technologies: [".NET Core", "React", "TypeScript", "OCR", "Entity Framework", "SQLite"],
+    techStack: [
+      { category: "Frontend", technologies: ["React 18", "TypeScript", "Vite", "CSS3"] },
+      { category: "Backend", technologies: [".NET 9", "ASP.NET Core", "Entity Framework", "SQLite"] },
+      { category: "AI/OCR", technologies: ["Tesseract.js", "OCR.space API", "Custom Parsing"] },
+      { category: "Libraries", technologies: ["Recharts", "Date-fns", "Lucide Icons", "AutoMapper"] },
+    ],
+    features: [
+      {
+        title: "Smart Receipt OCR Processing",
+        description: "Dual OCR system with intelligent data extraction",
+        details: [
+          "Client-side Tesseract.js for offline processing",
+          "Server-side OCR.space API for enhanced accuracy",
+          "Automatic merchant, amount, and date extraction",
+          "Smart parsing with advanced regex patterns",
+          "Real-time processing progress indicators",
+        ],
+      },
+      {
+        title: "Advanced Analytics Dashboard",
+        description: "Comprehensive expense tracking and visualization",
+        details: [
+          "Multiple view modes: Overview and Custom Date Range",
+          "Interactive charts with Recharts library",
+          "Period filtering (week, month, year)",
+          "Category breakdown with percentages",
+          "Daily spending averages and insights",
+        ],
+      },
+      {
+        title: "Modern User Experience",
+        description: "Responsive design with intuitive navigation",
+        details: [
+          "Tab-based navigation system",
+          "Mobile-first responsive design",
+          "Real-time form validation",
+          "Loading states and error handling",
+          "Smooth animations and transitions",
+        ],
+      },
+      {
+        title: "Clean Architecture Backend",
+        description: "Scalable .NET Core architecture with best practices",
+        details: [
+          "Clean Architecture with separated layers",
+          "JWT authentication and authorization",
+          "Entity Framework with code-first approach",
+          "AutoMapper for DTO transformations",
+          "FluentValidation for input validation",
+        ],
+      },
+    ],
+    achievements: [
+      { metric: "95% accuracy", description: "in OCR data extraction" },
+      { metric: "Dual OCR system", description: "with intelligent failover" },
+      { metric: "100% responsive", description: "across all device types" },
+      { metric: "Clean architecture", description: "with SOLID principles" },
+    ],
+    challenges: [
+      "Implementing accurate OCR with multiple providers",
+      "Synchronizing date filters across components",
+      "Creating responsive chart visualizations",
+      "Designing clean architecture patterns",
+    ],
+    solutions: [
+      "Dual OCR system with client-side and server-side processing",
+      "Centralized date filtering logic with React hooks",
+      "Recharts integration with responsive containers",
+      "Layered architecture with dependency injection",
+    ],
+    learnings: [
+      "Advanced OCR integration and text processing",
+      "Modern React patterns with TypeScript",
+      "Clean Architecture in .NET Core",
+      "Responsive design and user experience",
+    ],
+    category: "full-stack",
+    complexity: "advanced",
+    status: "completed",
   },
   {
     id: "ai-project-recommendation",

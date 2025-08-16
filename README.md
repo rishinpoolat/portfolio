@@ -18,6 +18,7 @@ A comprehensive full-stack expense tracking application featuring intelligent OC
 ## 📁 Portfolio Structure
 
 ### Projects
+- [**OncoTracker**](./projects/oncotracker.md) - Cancer patient management system with ASP.NET Core MVC
 - [**Expense Tracker**](./projects/expense-tracker.md) - Full-stack app with Smart Receipt OCR
 - [**Commit Suggester**](./projects/commit-suggester.md) - AI-powered git commit message generator
 - [**Video Summarizer**](./projects/video-summarizer.md) - YouTube video summarization with multi-LLM support
@@ -46,8 +47,8 @@ A comprehensive full-stack expense tracking application featuring intelligent OC
 
 ### Full-Stack Development
 - **Frontend**: React, TypeScript, Next.js, Vue.js, TailwindCSS
-- **Backend**: .NET Core, Node.js, Express.js, Python FastAPI
-- **Databases**: PostgreSQL, MongoDB, SQLite, Redis
+- **Backend**: .NET Core, ASP.NET Core MVC, Node.js, Express.js, Python FastAPI
+- **Databases**: PostgreSQL, MongoDB, SQLite, Redis, Entity Framework Core
 - **Cloud**: AWS (EC2, S3, RDS, DynamoDB), Supabase
 
 ### AI/ML & Automation
@@ -107,10 +108,11 @@ This portfolio is built with:
 
 ## 🔄 Recent Updates
 
+- **January 2025**: Added OncoTracker - Cancer patient management system with ASP.NET Core MVC
 - **January 2025**: Added Expense Tracker with Smart Receipt OCR
 - **December 2024**: Enhanced portfolio with TypeScript and improved project structure
 - **November 2024**: Added comprehensive project documentation with detailed technical specifications
 
 ---
 
-*Last Updated: January 2025*
+*Last Updated: August 2025*

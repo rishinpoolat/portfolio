@@ -350,6 +350,95 @@ export const projects: Project[] = [
     status: "completed",
   },
   {
+    id: "oncotracker",
+    title: "OncoTracker",
+    shortDescription:
+      "Comprehensive cancer patient management web application facilitating seamless communication between patients and healthcare providers through appointment scheduling, medication tracking, and treatment progress monitoring.",
+    fullDescription:
+      "OncoTracker is a healthcare management web application built with ASP.NET Core MVC that enables cancer patients and doctors to manage treatments, appointments, medications, and medical records in a secure, HIPAA-compliant environment.",
+    githubUrl: "https://github.com/rishinpoolat/OncoTracker",
+    technologies: ["ASP.NET Core", "C#", "Entity Framework", "SQLite", "ASP.NET Identity", "MVC"],
+    techStack: [
+      { category: "Backend", technologies: ["ASP.NET Core 9.0", "Entity Framework Core", "SQLite"] },
+      { category: "Authentication", technologies: ["ASP.NET Core Identity", "Role-based Authorization"] },
+      { category: "Frontend", technologies: ["Razor Views", "Bootstrap", "JavaScript", "CSS3"] },
+      { category: "Database", technologies: ["SQLite", "Entity Framework Migrations", "GUID-based IDs"] },
+    ],
+    features: [
+      {
+        title: "Patient Management System",
+        description: "Comprehensive patient profiles with medical history tracking",
+        details: [
+          "Cancer type, stage, and diagnosis date tracking",
+          "Patient-doctor assignment system",
+          "Treatment history and progress monitoring",
+          "Medication management and scheduling",
+          "Secure medical record storage",
+        ],
+      },
+      {
+        title: "Appointment Workflow",
+        description: "Complete appointment lifecycle management",
+        details: [
+          "Patient appointment booking system",
+          "Doctor approval/rejection workflow",
+          "Multiple appointment types (Consultation, Chemotherapy, Scans)",
+          "Real-time status tracking (Pending, Approved, Completed, Cancelled)",
+          "Appointment scheduling with conflict detection",
+        ],
+      },
+      {
+        title: "Healthcare Provider Dashboard",
+        description: "Comprehensive tools for medical professionals",
+        details: [
+          "Patient list management with detailed profiles",
+          "Treatment planning and medication prescription",
+          "Appointment request management",
+          "Progress note creation and tracking",
+          "Analytics and reporting capabilities",
+        ],
+      },
+      {
+        title: "Security & Compliance",
+        description: "HIPAA-compliant data handling and security",
+        details: [
+          "Role-based authentication (Patient/Doctor)",
+          "Secure user registration and login",
+          "Data encryption and privacy protection",
+          "Audit trails for medical records",
+          "GUID-based secure entity identification",
+        ],
+      },
+    ],
+    achievements: [
+      { metric: "Role-based", description: "authentication with secure access control" },
+      { metric: "Complete workflow", description: "from patient registration to treatment completion" },
+      { metric: "HIPAA-compliant", description: "data handling and security measures" },
+      { metric: "Scalable architecture", description: "supporting multiple healthcare facilities" },
+    ],
+    challenges: [
+      "Implementing HIPAA-compliant data security",
+      "Managing complex medical workflow requirements",
+      "Creating intuitive interfaces for healthcare professionals",
+      "Designing scalable database architecture for medical records",
+    ],
+    solutions: [
+      "ASP.NET Identity with role-based authorization",
+      "Entity Framework with comprehensive data models",
+      "Responsive design with Bootstrap framework",
+      "Clean architecture with separation of concerns",
+    ],
+    learnings: [
+      "Healthcare software development best practices",
+      "ASP.NET Core MVC architecture and patterns",
+      "Medical workflow automation",
+      "Enterprise-level security implementation",
+    ],
+    category: "other",
+    complexity: "advanced",
+    status: "completed",
+  },
+  {
     id: "ai-project-recommendation",
     title: "AI Project Recommendation System",
     description:

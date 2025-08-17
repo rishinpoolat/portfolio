@@ -16,7 +16,7 @@
 - **Location:** Thiruvananthapuram, Kerala, India
 - **Duration:** 4 Years (2019-2023)
 - **Medium of Instruction:** English
-- **Examination Completion:** June 2023
+- **Month & Year of Passing:** June 2023
 - **Certificate Date:** 2nd August 2023
 - **CGPA:** 8.5 (First Class with Distinction)
 
@@ -135,9 +135,11 @@
 - Software Quality Management
 - Software Project Management
 - Professional Ethics in Computing
+- Management of Software Systems
 
 ### **Mathematical Foundation**
 - Linear Algebra and Calculus
+- Vector Calculus and Differential Equations
 - Discrete Mathematical Structures
 - Graph Theory
 - Formal Languages and Automata Theory
@@ -150,21 +152,24 @@
 - Networking Lab
 - Compiler Lab
 - System Software Lab
+- Engineering Physics and Chemistry Labs
 
 ### **Project Work**
 - Mini Project (Semester 6)
 - Major Project Phase I & II (Semesters 7 & 8)
 - Comprehensive Course Work
 - Technical Seminars
+- Comprehensive Viva Voce
 
 ---
 
 ## **Academic Performance**
-- **Overall CGPA:** 8.5 out of 10.0
+- **Overall CGPA:** 8.5 out of 10.0 (EIGHT POINT FIVE)
 - **Classification:** First Class with Distinction
 - **Consistent Performance:** Maintained strong academic performance across all semesters
 - **Peak Performance:** Achieved highest SGPA of 8.97 in Seventh Semester
 - **Strong Foundation:** Excellent performance in core computer science subjects
+- **Official Transcript Folio:** KTU/DR(EXAM)/1/15989
 
 ---
 
@@ -172,9 +177,11 @@
 - **College:** Government Engineering College Sreekrishnapuram
 - **University:** APJ Abdul Kalam Technological University
 - **University Type:** Kerala State Government University
-- **Location:** Thiruvananthapuram, Kerala, India
+- **Campus Address:** CET Campus, Thiruvananthapuram - 695 016, Kerala, India
+- **Contact:** Tel: +91 471-2785617
 - **Accreditation:** State Government University
 - **Program Duration:** 4 Years (8 Semesters)
+- **Email:** exam@ktu.edu.in
+- **Website:** www.ktu.edu.in
 
 ---
-

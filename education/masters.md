@@ -5,13 +5,13 @@
 
 ### **Personal Information**
 - **Name:** Mohammed Rishin Poolat
-- **University Reference:** 239964122
+- **University Reference:** 239064122
 - **Date of Birth:** 18/Sep/1999
 
 ### **Degree Details**
 - **Qualification:** Master of Science in Advanced Computer Science with Distinction
 - **Institution:** University of Leicester
-- **Duration:** January 2024 - June 2025
+- **Duration:** 2023/4 - 2024/5
 - **Date of Award:** 23 June 2025
 - **Certificate Date:** 18th July 2025
 - **Overall Classification:** Distinction
@@ -24,18 +24,18 @@
 
 #### **1. Big Data and Predictive Analytics (CO7093)**
 - **Credits:** 15
-- **Grade:** A (72.80%)
+- **Grade:** A (72.60%)
 - **Description:** Study of methods and tools for predictive analysis from existing datasets to develop statistical models. Covers individual preferences prediction, credit approval, marketing, stock predictions, and demand forecasting. Utilizes open libraries such as **scikit-learn** and distributed processing with **Apache Spark**.
 
 #### **2. Generative Development (CO7207)**
 - **Credits:** 15
-- **Grade:** A (78.95%)
+- **Grade:** A (73.75%)
 - **Description:** Advanced study of modern software engineering paradigms including UML modeling, generative methods for code generation, aspect-oriented programming, and Model-Driven Architecture (MDA). Focuses on systematic development from UML models to implementation.
 
-#### **3. Mobile and Web Applications (CO7102)**
+#### **3. Personal and Group Skills (CO7210)**
 - **Credits:** 15
-- **Grade:** A (75.76%)
-- **Description:** Comprehensive exploration of web technologies and mobile application development. Covers XML-based techniques, security and session handling, Java servlet technology, JavaScript, web services, and mobile application architecture using chosen development frameworks.
+- **Grade:** A (78.00%)
+- **Description:** Development of essential personal and professional skills for effective teamwork and individual performance in technology environments. Covers communication, project management, leadership, and collaborative problem-solving techniques.
 
 #### **4. Service-Oriented Architectures (CO7214)**
 - **Credits:** 15
@@ -44,23 +44,28 @@
 
 #### **5. Software Measurement and Quality Assurance (CO7095)**
 - **Credits:** 15
-- **Grade:** A (70.89%)
+- **Grade:** A (70.00%)
 - **Description:** In-depth exploration of software quality assurance from industrial perspective. Covers software metrics, quality control mechanisms, testing, inspections, reviews, and process improvement models including SEI Capability Maturity Model and SPICE (ISO/IEC 15504).
 
-#### **6. Internet and Cloud Computing (CO7219)**
+#### **6. Mobile and Web Applications (CO7102)**
 - **Credits:** 15
-- **Grade:** A (75.36%)
-- **Description:** Comprehensive coverage of networking fundamentals and cloud computing principles. Includes internet architecture, sliding window protocol, routing, TCP/UDP protocols, network performance calculations, **MapReduce** programming model, **Hadoop** implementation, and cloud security considerations.
+- **Grade:** A (81.35%)
+- **Description:** Comprehensive exploration of web technologies and mobile application development. Covers XML-based techniques, security and session handling, Java servlet technology, JavaScript, web services, and mobile application architecture using chosen development frameworks.
 
 #### **7. Advanced C++ Programming (CO7105)**
 - **Credits:** 15
-- **Grade:** B (65.54%)
+- **Grade:** B (65.34%)
 - **Description:** Development of advanced C++ programming skills focusing on object-oriented programming principles. Covers efficient code production, object-oriented design patterns, and practical programming exercises to enhance coding proficiency.
 
 #### **8. Individual Project (CO7201)**
 - **Credits:** 60
-- **Grade:** A (72.24%)
+- **Grade:** A (72.15%)
 - **Description:** Independent research project demonstrating advanced knowledge and skills acquired throughout the program. Represents a significant portion of the degree requirements.
+
+#### **9. Internet and Cloud Computing (CO7219)**
+- **Credits:** 15
+- **Grade:** A (72.50%)
+- **Description:** Comprehensive coverage of networking fundamentals and cloud computing principles. Includes internet architecture, sliding window protocol, routing, TCP/UDP protocols, network performance calculations, **MapReduce** programming model, **Hadoop** implementation, and cloud security considerations.
 
 ---
 
